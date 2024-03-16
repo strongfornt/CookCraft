@@ -47,7 +47,7 @@ export default function Racipe({cart}) {
                             calories
                         </p>
                     </div>
-                    <button className='btn bg-[#02B76C] hover:bg-transparent hover:text-[#068F56] text-white  font-bold'>
+                    <button className='btn duration-300 bg-[#02B76C] hover:bg-transparent hover:text-[#068F56] text-white  font-bold'>
                         Want to Cook
                     </button>
                 </div>

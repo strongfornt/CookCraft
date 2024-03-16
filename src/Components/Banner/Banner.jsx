@@ -18,11 +18,11 @@ export default function Banner() {
        </p>
        {/* button div --------------- */}
        <div className=" w-full  lg:w-1/3 flex justify-evenly ">
-        <button className="btn bg-[#B2FFDE]  font-semibold text-[#150B2B] hover:bg-transparent hover:text-[#FFFFFF] ">
+        <button className="btn bg-[#B2FFDE] duration-300 font-semibold text-[#150B2B] hover:bg-transparent hover:text-[#FFFFFF] ">
         Explore Now
         </button>
 
-        <button className="btn bg-transparent hover:bg-[#B2FFDE] text-[#FFFFFF] font-semibold hover:text-black ">
+        <button className="btn bg-transparent duration-300 hover:bg-[#B2FFDE] text-[#FFFFFF] font-semibold hover:text-black ">
         Our Feedback
         </button>
        </div>
