@@ -13,19 +13,21 @@ function App() {
   return (
     <>
       {/* nav bar start here------------------- */}
-      <header className='container px-4 lg:px-16'>
+      <header className='container px-4 lg:px-10'>
         <Nav/>
       </header>
       {/* nav bar end  here------------------- */}
       {/* main section start here ----------------*/}
-      <main className='container px-4 lg:px-16 mt-5 mb-10 '>
+      <main className='container mt-5 mb-10  px-4 lg:px-10'>
+          <div className=' '>
           <Banner/>
+          </div>
 
           {/* cooking section */}
-          <section className='my-20'>
+          <section className='my-20 '>
              <RacipeTitle/>
              {/* Recipe and cook div container */}
-             <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
+             <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
                  <FetchRecipe/>
                  <CookContainer/>
              </div>

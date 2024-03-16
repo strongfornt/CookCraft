@@ -43,7 +43,7 @@ export default function Nav() {
             </div>
             </ul>
           </div>
-          <a className=" text-xl btn btn-ghost">Recipe Calories</a>
+          <a className=" text-xl lg:text-2xl font-bold btn btn-ghost">CookCraft</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
