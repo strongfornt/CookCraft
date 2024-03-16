@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Nav from './Components/Nav/Nav'
@@ -8,7 +9,18 @@ import FetchRecipe from './Components/Recipe/FetchRecipe'
 import RacipeTitle from './Components/Recipe/RacipeTitle'
 
 function App() {
+  const [card,setCard] = useState([]);
+  const [cookCount,setCookCount] = useState(0)
  
+  const handleWantToCook = (cart) =>{
+  const isExist = card.find(item => item.recipe_id == cart.recipe_id)
+    if(!isExist){
+      setCard([...card,cart])
+      setCookCount(cookCount+1)
+    }else(
+      alert('ache aita')
+    )
+  }
 
   return (
     <>
@@ -28,8 +40,8 @@ function App() {
              <RacipeTitle/>
              {/* Recipe and cook div container */}
              <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-                 <FetchRecipe/>
-                 <CookContainer/>
+                 <FetchRecipe handleWantToCook={handleWantToCook}/>
+                 <CookContainer card={card} cookCount={cookCount} />
              </div>
           </section>
       </main>

@@ -4,12 +4,13 @@ import cook from './../../assets/image/cook.png'
 import PropTypes from 'prop-types';
 
 Racipe.propTypes = {
-    cart:PropTypes.object
+    cart:PropTypes.object,
+    handleWantToCook:PropTypes.func
 }
 
-export default function Racipe({cart}) {
+export default function Racipe({cart,handleWantToCook}) {
     const { recipe_image,recipe_name,short_description,ingredients,preparing_time,calories } = cart
-    console.log(cart);
+  
   return (
     <>
         <div className="p-4 border border-[#28282833] rounded-xl">
@@ -35,7 +36,7 @@ export default function Racipe({cart}) {
                 {/*  Ingredients end -------------------------------*/}
                 {/* time and button start --------------------------*/} 
                 <div className='py-4 space-y-4'>
-                    <div className='flex gap-6'>
+                    <div className='flex gap-6 '>
                         <p className='flex item-center gap-1 text-[#282828CC] text-sm font-normal '> 
                             <img src={time} alt="" />
                             <span>{preparing_time}</span>
@@ -47,7 +48,8 @@ export default function Racipe({cart}) {
                             calories
                         </p>
                     </div>
-                    <button className='btn duration-300 bg-[#02B76C] hover:bg-transparent hover:text-[#068F56] text-white  font-bold'>
+                    <button onClick={()=>handleWantToCook(cart)}
+                    className='btn duration-300 bg-[#02B76C] hover:bg-transparent hover:text-[#068F56] text-white  font-bold'>
                         Want to Cook
                     </button>
                 </div>
