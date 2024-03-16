@@ -19,7 +19,7 @@ export default function Cook({card,cookCount,handleDeleteButton}) {
      
         
         <div className="">
-  <table className=" text-[#282828CC] text-sm w-full font-medium   table-auto ">
+  <table className=" text-[#282828CC] text-sm w-full  font-medium   table-auto ">
     {/* head */}
     <thead className="   ">
       <tr >

@@ -17,6 +17,10 @@ function App() {
 
   const [cookCount,setCookCount] = useState(0);
   const [currentCount,setCurrenCount] = useState(0)
+
+  //total time and total calories count
+  const [totalTime , setTotalTime] = useState(0)
+  const [totalCalories,setTotalCalories] = useState(0)
  
  
   const handleWantToCook = (cart) =>{
@@ -30,14 +34,20 @@ function App() {
   }
 
   const handleDeleteButton = (cart) =>{
+    
+    const time = parseInt(cart.preparing_time);
+    const calories = parseInt(cart.calories);
+    
 
     const remaining = card.filter((item) => item.recipe_id !==cart.recipe_id);
      setCard(remaining)
       setCookCount(cookCount-1)
        setCurrentCook([...currenCook,cart])
-       setCurrenCount(currentCount+1)
+       setCurrenCount(currentCount + 1)
+       setTotalTime(totalTime + time);
+       setTotalCalories(totalCalories + calories)
   }
-  
+
 
   return (
     <>
@@ -64,6 +74,8 @@ function App() {
                   cookCount={cookCount}
                   currentCook ={currenCook}
                   currentCount ={currentCount}
+                  totalTime ={totalTime}
+                  totalCalories ={totalCalories}
                    />
              </div>
           </section>
