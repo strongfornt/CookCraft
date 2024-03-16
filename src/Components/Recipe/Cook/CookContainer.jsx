@@ -15,6 +15,7 @@ export default function CookContainer({card,cookCount}) {
         <Cook card={card}
         cookCount ={cookCount}
         />
+        
         {/* <CurrentlyCook/> */}
         
         </div>

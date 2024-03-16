@@ -11,7 +11,7 @@ export default function Cook({card,cookCount}) {
     <>
        <div className="px-4">
        <div className="pb-4 border-b border-[#28282826]  ">
-        <h1 className="text-[#282828] font-semibold text-xl text-center ">Want to cook: <span>0{cookCount}</span></h1>
+        <h1 className="text-[#282828] font-semibold text-xl text-center ">Want to cook: <span>{cookCount}</span></h1>
         </div>
        </div>
 

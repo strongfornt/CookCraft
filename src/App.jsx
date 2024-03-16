@@ -6,6 +6,9 @@ import Nav from './Components/Nav/Nav'
 import CookContainer from './Components/Recipe/Cook/CookContainer'
 import FetchRecipe from './Components/Recipe/FetchRecipe'
 
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 import RacipeTitle from './Components/Recipe/RacipeTitle'
 
 function App() {
@@ -18,7 +21,7 @@ function App() {
       setCard([...card,cart])
       setCookCount(cookCount+1)
     }else(
-      alert('ache aita')
+      toast.warn('Already exist !')
     )
   }
 
@@ -46,6 +49,7 @@ function App() {
           </section>
       </main>
       {/* main section end here ----------------*/}
+      <ToastContainer/>
     </>
   )
 }
