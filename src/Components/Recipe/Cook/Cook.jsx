@@ -27,6 +27,7 @@ export default function Cook() {
                 border border-[#0BE58A] duration-300"  >
                     Preparing
                     </button>
+                    <button>hakei</button>
             </div>
 
         </div>
