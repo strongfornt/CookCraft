@@ -13,7 +13,11 @@ import RacipeTitle from './Components/Recipe/RacipeTitle'
 
 function App() {
   const [card,setCard] = useState([]);
-  const [cookCount,setCookCount] = useState(0)
+  const [currenCook,setCurrentCook] = useState([]); 
+
+  const [cookCount,setCookCount] = useState(0);
+  const [currentCount,setCurrenCount] = useState(0)
+ 
  
   const handleWantToCook = (cart) =>{
   const isExist = card.find(item => item.recipe_id == cart.recipe_id)
@@ -24,6 +28,16 @@ function App() {
       toast.warn('Already exist !')
     )
   }
+
+  const handleDeleteButton = (cart) =>{
+
+    const remaining = card.filter((item) => item.recipe_id !==cart.recipe_id);
+     setCard(remaining)
+      setCookCount(cookCount-1)
+       setCurrentCook([...currenCook,cart])
+       setCurrenCount(currentCount+1)
+  }
+  
 
   return (
     <>
@@ -44,7 +58,13 @@ function App() {
              {/* Recipe and cook div container */}
              <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
                  <FetchRecipe handleWantToCook={handleWantToCook}/>
-                 <CookContainer card={card} cookCount={cookCount} />
+                 <CookContainer 
+                 handleDeleteButton={handleDeleteButton}
+                  card={card} 
+                  cookCount={cookCount}
+                  currentCook ={currenCook}
+                  currentCount ={currentCount}
+                   />
              </div>
           </section>
       </main>

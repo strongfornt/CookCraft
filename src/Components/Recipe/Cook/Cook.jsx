@@ -2,11 +2,12 @@ import TableDisplay from "./TableDisplay";
 import PropTypes from 'prop-types';
 Cook.propTypes = {
     card:PropTypes.array,
-    cookCount:PropTypes.number
+    cookCount:PropTypes.number,
+    handleDeleteButton:PropTypes.func
 }
 
-export default function Cook({card,cookCount}) {
-    console.log(card);
+export default function Cook({card,cookCount,handleDeleteButton}) {
+    
   return (
     <>
        <div className="px-4">
@@ -18,12 +19,12 @@ export default function Cook({card,cookCount}) {
      
         
         <div className="">
-  <table className=" text-[#282828CC] text-sm w-full font-medium   table-auto  ">
+  <table className=" text-[#282828CC] text-sm w-full font-medium   table-auto ">
     {/* head */}
-    <thead className=" ">
+    <thead className="   ">
       <tr >
-        <td>
-         
+        <td className="px-2">
+        
         </td>
         <td className="py-4">Name</td>
         <td>Time</td>
@@ -34,7 +35,11 @@ export default function Cook({card,cookCount}) {
       </tr>
     </thead>
     {
-        card.map((item,index) =><TableDisplay item={item} key={index} index={index} />)
+        card.map((item,index) =><TableDisplay item={item}
+         key={index}
+          index={index}
+           handleDeleteButton={handleDeleteButton}
+            />)
     }
   
  
