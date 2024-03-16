@@ -18,7 +18,7 @@ export default function CurrentlyCook({ currentCook,currentCount }) {
       </div>
         {/* table start ----------------- */}
       <div className="">
-  <table className=" text-[#282828CC] text-sm w-full font-medium table  table-auto ">
+  <table className=" text-[#282828CC] text-sm w-full font-medium   table-auto ">
     {/* head */}
     <thead className="   ">
       <tr >

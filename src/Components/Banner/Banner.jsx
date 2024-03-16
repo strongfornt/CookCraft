@@ -14,7 +14,7 @@ export default function Banner() {
        <div className="flex flex-col items-center justify-center min-h-[85vh] px-2 md:px-0  gap-4 ">
        <p className="text-[#FFFFFF] text-center font-bold text-2xl lg:text-5xl lg:w-3/4 ">Discover an exceptional cooking class tailored for you!</p>
        <p className=" text-[#FFFFFF] lg:w-4/5 text-center text-sm font-normal ">
-       Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.
+       Indulge in culinary bliss at our restaurant, where every dish tells a story of passion and flavor. From savory classics to innovative creations, embark on a gastronomic journey that tantalizes your taste buds and leaves you craving for more.
        </p>
        {/* button div --------------- */}
        <div className=" w-full  lg:w-1/3 flex justify-evenly ">
