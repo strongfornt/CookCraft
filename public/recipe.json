@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": "1",
+      "recipe_name": "Grilled Chicken Salad",
+      "short_description": "A refreshing and healthy salad with grilled chicken breast slices.",
+      "ingredients": ["Chicken breast", "Lettuce", "Tomatoes", "Cucumbers", "Red onion"],
+      "preparing_time": "30",
+      "calories": "350",
+      "recipe_image": "https://i.ibb.co/N7SBLCr/Grilled-chicken-salad.jpg"
+    },
+    {
+      "recipe_id": "2",
+      "recipe_name": "Vegetable Stir-Fry",
+      "short_description": "A colorful and nutritious stir-fry loaded with fresh vegetables.",
+      "ingredients": ["Broccoli", "Carrots", "Bell peppers", "Snap peas", "Onion"],
+      "preparing_time": "25",
+      "calories": "250",
+      "recipe_image": "https://i.ibb.co/5jK1cBK/Asian-stirfried-vegetables.jpg"
+    },
+    {
+      "recipe_id": "3",
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "Classic Italian pasta dish with creamy sauce and crispy bacon.",
+      "ingredients": ["Spaghetti", "Eggs", "Bacon", "Parmesan cheese", "Garlic"],
+      "preparing_time": "35",
+      "calories": "450",
+      "recipe_image": "https://i.ibb.co/vcyZRtX/spaghetti-carbonara.webp"
+    },
+    {
+      "recipe_id": "4",
+      "recipe_name": "Grilled Salmon with Asparagus",
+      "short_description": "Healthy and delicious grilled salmon served with roasted asparagus.",
+      "ingredients": ["Salmon fillet", "Asparagus", "Olive oil", "Lemon", "Salt"],
+      "preparing_time": "20",
+      "calories": "320",
+      "recipe_image": "https://i.ibb.co/R6vbMzL/Salmon-on-asparagu.webp"
+    },
+    {
+      "recipe_id": "5",
+      "recipe_name": "Quinoa Salad with Avocado",
+      "short_description": "Nutrient-packed salad with quinoa, avocado, and a tangy dressing.",
+      "ingredients": ["Quinoa", "Avocado", "Cherry tomatoes", "Cucumber", "Red onion"],
+      "preparing_time": "25",
+      "calories": "300",
+      "recipe_image": "https://i.ibb.co/VVgBVNC/Quinoa-Salad-with-Avocado.jpg"
+    },
+    {
+      "recipe_id": "6",
+      "recipe_name": "Vegetarian Chili",
+      "short_description": "Hearty chili loaded with beans, vegetables, and spices.",
+      "ingredients": ["Kidney beans", "Black beans", "Tomatoes", "Bell peppers", "Onion"],
+      "preparing_time": "40",
+      "calories": "280",
+      "recipe_image": "https://i.ibb.co/sJdp8qw/three-bean-vegetarian-chili.png"
+    }
+  ]
+  
