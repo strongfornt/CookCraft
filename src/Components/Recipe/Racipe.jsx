@@ -13,7 +13,7 @@ export default function Racipe({cart,handleWantToCook}) {
   
   return (
     <>
-        <div className="p-4 border border-[#28282833] rounded-xl">
+        <div className="p-4 border border-[#28282833] shadow-md rounded-xl">
                 <img className='rounded-xl h-56 w-full bg-center bg-cover bg-red-800' src={recipe_image} alt="" />
                 {/* name and description ---------------------start*/}
                 <div className='space-y-1  border-b border-[#2828281A] py-4'>
