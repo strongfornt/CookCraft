@@ -17,7 +17,7 @@ CookContainer.propTypes = {
 
 export default function CookContainer({ card, cookCount, handleDeleteButton,currentCook,currentCount,totalCalories,totalTime }) {
   return (
-    <div className="lg:col-span-1 mt-16  min-w-fit  ">
+    <div className="lg:col-span-1 mt-16    ">
       <div className="border  border-[#28282833] py-8  rounded-xl">
         <Cook
           card={card}

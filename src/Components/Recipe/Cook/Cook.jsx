@@ -12,7 +12,8 @@ export default function Cook({card,cookCount,handleDeleteButton}) {
     <>
        <div className="px-4">
        <div className="pb-4 border-b border-[#28282826]  ">
-        <h1 className="text-[#282828] font-semibold text-xl text-center ">Want to cook: <span>{cookCount}</span></h1>
+        <h1 className="text-[#282828] font-semibold text-xl text-center ">
+          Want to cook: {cookCount <= 9 && cookCount >0 && "0"}<span>{cookCount}</span></h1>
         </div>
        </div>
 

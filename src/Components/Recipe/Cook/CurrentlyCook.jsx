@@ -12,7 +12,7 @@ export default function CurrentlyCook({ currentCook,currentCount }) {
       <div className="px-4 pt-4">
         <div className="pb-4 border-b border-[#28282826]  ">
           <h1 className="text-[#282828] font-semibold text-xl text-center ">
-            Currently cooking: <span>{currentCount}</span>
+            Currently cooking: {currentCount < 9 && currentCount > 0 && "0" }<span>{currentCount}</span>
           </h1>
         </div>
       </div>
